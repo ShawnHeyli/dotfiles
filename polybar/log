@@ -1,0 +1,2 @@
+[ 02/01/2023 19:13:15.226 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 1870)
+[ 02/01/2023 19:13:15.226 paint_all ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
