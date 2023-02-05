@@ -27,7 +27,7 @@ apply_wallpaper() {
 }
 
 apply_terminal(){
-	sed -i '/import:/{n; s#^.*$#  - '"$PATH_TERM"'/themes/catppuccin-mocha.yml#}' "$PATH_TERM/alacritty.yml"
+	sed -i '/import:/{n; s#^.*$#  - '"$PATH_TERM"'/themes/catppuccin-latte.yml#}' "$PATH_TERM/alacritty.yml"
 }
 
 apply_helix(){
