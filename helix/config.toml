@@ -1,0 +1,11 @@
+theme = "catppuccin_mocha"
+
+[editor]
+line-number = "relative"
+cursorline = true
+color-modes = true
+mouse = false
+auto-save = true
+
+[editor.indent-guides]
+render = true
