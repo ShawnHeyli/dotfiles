@@ -16,11 +16,8 @@ PATH_ROFI="$PATH_BSPWM/rofi"
 
 wallpaper="$PATH_CONF/wallpaper/day.webp"
 
-# Bspwm
-bspwm_fbc="$accent"
-bspwm_nbc="$background"
-bspwm_abc="$color5"
-bspwm_pfc="$color2"
+# Theme name
+theme="catppuccin-latte"
 
 apply_wallpaper() {
 	feh --bg-scale "$wallpaper"
@@ -31,9 +28,15 @@ apply_terminal(){
 }
 
 apply_helix(){
-	sed -i 's/theme =.*/theme = \"catppuccin_latte\"/' "$PATH_HELIX/config.toml"
+	sed -i 's#theme =.*#theme = \"'"catppuccin_latte"'\"#' "$PATH_HELIX/config.toml"
+}
+
+# Can't pinpoint good regex, so just changes the content of the already included colors.ini
+apply_polybar(){
+	cat "$PATH_PBAR/themes/cattpuccin-latte.ini" > "$PATH_PBAR/colors.ini"
 }
 
 apply_wallpaper
 apply_terminal
 apply_helix
+apply_polybar
