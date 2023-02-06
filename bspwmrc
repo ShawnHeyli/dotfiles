@@ -107,5 +107,5 @@ xsetroot -cursor_name left_ptr
 feh --bg-scale --randomize ~/.config/wallpaper/*
 
 # Start bspwm scripts
-polybar --quiet --config="$BSPDIR/polybar/config.ini" &
+polybar --reload --quiet --config="$BSPDIR/polybar/config.ini" &
 picom --config "$BSPDIR/picom.conf" &
