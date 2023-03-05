@@ -1,0 +1,6 @@
+Xft/DPI "192"
+Xft/Hinting 1
+Xft/HintStyle "hintslight"
+Xft/Antialias 1
+Xft/RGBA "none"
+Gtk/CursorThemeName "Catppuccin-Mocha-Dark"
