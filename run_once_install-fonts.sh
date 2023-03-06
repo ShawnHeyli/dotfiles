@@ -1,3 +1,5 @@
+#!/bin/sh
+
 ### FONTS ###
 # System-wide
 mkdir -p /usr/local/share/fonts/otf/ComicCode
