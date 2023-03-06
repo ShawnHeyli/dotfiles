@@ -15,6 +15,6 @@ sudo sed -i 's/FONTFACE=".*"/FONTFACE="ComicCodeLigatures Nerd Font Mono"/g' /et
 sudo sed -i 's/FONTSIZE=".*"/FONTSIZE="8x16"/g' /etc/default/console-setup
 
 # Apply the changes
-sudo /etc/init.d/console-setup restart
+sudo /etc/init.d/console-setup.sh restart
 
 {{ end }}
