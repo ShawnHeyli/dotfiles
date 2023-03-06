@@ -8,6 +8,7 @@ cp fonts/* /usr/local/share/fonts/otf/ComicCode
 {{ if eq .chezmoi.osRelease.id "debian" }}
 
 # Install console-setup package
+echo 'debconf debconf/frontend select Noninteractive' | sudo debconf-set-selections
 sudo apt install console-setup -y
 
 # Set the font and font size
