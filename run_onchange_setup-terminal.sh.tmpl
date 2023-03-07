@@ -1,0 +1,13 @@
+#!/bin/bash
+
+### ZSH ###
+
+{{ if eq .chezmoi.osRelease.id "debian" }}
+  sudo apt update
+  sudo apt install zsh -y
+{{ else if eq .chezmoi.osRelease.id "arch" }}
+  sudo pacman -Syu --noconfirm
+  sudo pacman -S zsh --noconfirm
+{{end}}
+# Oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" --unattended
