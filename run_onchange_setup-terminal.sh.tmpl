@@ -9,5 +9,9 @@
   sudo pacman -Syu --noconfirm
   sudo pacman -S zsh --noconfirm
 {{end}}
+
 # Oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" --unattended
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+
+# Change default terminal for user using chezmoi
+sed -i '/^{{ .chezmoi.username }}/s/bash\|sh/zsh/' /etc/passwd
