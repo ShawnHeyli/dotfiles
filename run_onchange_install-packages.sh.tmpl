@@ -16,7 +16,7 @@ packages=(
 sudo apt update
 
 for package in "${packages[@]}"; do
-  sudo apt install "$extension" -y
+  sudo apt install "$package" -y
 done
 
 {{ else if eq .chezmoi.osRelease.id "arch" }}
@@ -24,7 +24,7 @@ done
 sudo pacman -Syu --noconfirm
 
 for package in "${packages[@]}"; do
-  sudo pacman -S "$extension" --noconfirm
+  sudo pacman -S "$package" --noconfirm
 done
 
 {{ end }}
