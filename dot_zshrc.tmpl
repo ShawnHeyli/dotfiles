@@ -27,7 +27,7 @@ plugins=(aliases colored-man-pages copyfile sudo)
 source $ZSH/oh-my-zsh.sh
 
 ### User configuration ###
-export PATH="$PATH:{{ .chezmoi.homeDir }}/.config/bspwm/rofi/scripts:{{ .chezmoi.homeDir }}/.cargo/bin"
+export PATH="$PATH:{{ .chezmoi.homeDir }}/.cargo/bin"
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
