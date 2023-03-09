@@ -15,4 +15,7 @@
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 # Change default terminal for user using chezmoi
-sed -i '/^{{ .chezmoi.username }}/s/bash\|sh/zsh/' /etc/passwd
+awk -i '{ sub(/\/[a-zA-Z]*$/, "/zsh"); print }' /etc/passwd 
+
+# Update shell
+source ~/.zshrc
