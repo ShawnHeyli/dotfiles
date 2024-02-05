@@ -1,0 +1,17 @@
+theme = "base16_transparent"
+
+[editor]
+line-number = "relative"
+shell = ["fish", "-c"]
+auto-save = true
+auto-format = true
+idle-timeout = 200
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.soft-wrap]
+enable = true
+max-wrap = 10

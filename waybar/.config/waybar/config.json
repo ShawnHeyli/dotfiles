@@ -1,0 +1,146 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 30,
+  "modules-left": [
+    "clock",
+    "backlight",
+    "bluetooth"
+  ],
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+  "modules-right": [
+    "tray",
+    "network",
+    "pulseaudio",
+    "pulseaudio#microphone",
+    "battery"
+  ],
+  "hyprland/window": {
+    "format": "{}"
+  },
+  "hyprland/workspaces": {
+    "sort-by-name": true,
+    "format": "{id}",
+    "show-special": true,
+    "persistent_workspaces":{
+      "*":0 
+    }
+  },
+  "tray": {
+    "icon-size": 14,
+    "spacing": 2
+  },
+  "clock": {
+    "interval": 60,
+    "format": " {:%A, %B %d (%R)}"
+  },
+  "backlight": {
+    "device": "intel_backlight",
+    "on-click": "killall gammastep || gammastep -O 4500",
+    "format": "{icon} {percent}%",
+    "format-icons": [
+      "",
+      "",
+      ""
+    ]
+  },
+  "battery": {
+    "states": {
+      "good": 100,
+      "warning": 40,
+      "critical": 20
+    },
+    "on-click": "alacritty -e btop &",
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "tooltip": true,
+    "format-muted": " Muted",
+    "on-click": "pamixer -t",
+    "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +10%",
+    "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -10%",
+    "scroll-step": 5,
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": [
+        "",
+        "",
+        ""
+      ]
+    }
+  },
+  "pulseaudio#microphone": {
+    "format": "{format_source}",
+    "format-source": " {volume}%",
+    "format-source-muted": " Muted",
+    "on-click": "pamixer --default-source -t",
+    "on-scroll-up": "pamixer --default-source -i 5",
+    "on-scroll-down": "pamixer --default-source -d 5",
+    "scroll-step": 5
+  },
+  "network": {
+    "format-disconnected": "Disconnected",
+    "format-wifi": " {essid}",
+    "tooltip-format": " {signalStrength}",
+    "on-click": "env XDG_CURRENT_DESKTOP=GNOME gnome-control-center wifi &"
+  },
+  "bluetooth": {
+    "format": "",
+    "format-disabled": "󰂲",
+    "format-connected": "󰂱",
+    "tooltip-format": "{device_alias}",
+    "format-connected-battery": "󰂱 {device_battery_percentage}%",
+    "tooltip-format-enumerate-connected": "{device_alias}",
+    "on-click": "blueman-manager &"
+  },
+  "memory": {
+    "interval": 300,
+    "format": "  {used}G ",
+    "tooltip-format": "{used} / {total} G"
+  },
+  "disk": {
+    "interval": 600,
+    "format": "  {percentage_used}%",
+    "tooltip-format": "{used} used out of {total} on {path} "
+  },
+  "custom/updates": {
+    "format": "{}",
+    "interval": 900,
+    "exec": "~/.config/waybar/bin/updatecheck",
+    "return-type": "json",
+    "exec-if": "exit 0",
+    "signal": 8,
+    "on-click": "foot yay -Syu --noconfirm"
+  },
+  "custom/notifications": {
+    "format": "<b>{}</b> ",
+    "exec": "~/.config/waybar/bin/not-dnd -j",
+    "on-click": "~/.config/waybar/bin/not-dnd",
+    "return-type": "json",
+    "interval": "once",
+    "signal": 2
+  }
+}
