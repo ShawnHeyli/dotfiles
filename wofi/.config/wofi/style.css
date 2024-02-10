@@ -1,3 +1,6 @@
+/* DEFAULT THEME */
+/* Will be changed by darkman scripts (~/.local/share/{light,dark}-mode.d) */
+
 * {
   font-family: "Inconsolata Nerd Font", monospace;
   font-size: 14px;
@@ -7,9 +10,9 @@
 window {
   margin: 0px;
   padding: 10px;
-  border: 0.16em solid #b4befe;
+  border: 0.16em solid #7287fd;
   border-radius: 0.1em;
-  background-color: #1e1e2e;
+  background-color: #eff1f5;
 }
 
 /* Inner Box */
@@ -17,7 +20,7 @@ window {
   margin: 5px;
   padding: 10px;
   border: none;
-  background-color: #1e1e2e;
+  background-color: #eff1f5;
 }
 
 /* Outer Box */
@@ -25,7 +28,7 @@ window {
   margin: 5px;
   padding: 10px;
   border: none;
-  background-color: #1e1e2e;
+  background-color: #eff1f5;
 }
 
 /* Scroll */
@@ -33,7 +36,7 @@ window {
   margin: 0px;
   padding: 10px;
   border: none;
-  background-color: #1e1e2e;
+  background-color: #eff1f5;
 }
 
 /* Input */
@@ -42,44 +45,44 @@ window {
   padding: 10px;
   border: none;
   border-radius: 0.1em;
-  color: #cdd6f4;
-  background-color: #1e1e2e;
+  color: #4c4f69;
+  background-color: #eff1f5;
 }
 
 #input image {
   border: none;
-  color: #f38ba8;
+  color: #d20f39;
 }
 
 #input * {
-  outline: 4px solid #f38ba8 !important;
+  outline: 4px solid #d20f39 !important;
 }
 
 /* Text */
 #text {
   margin: 5px;
   border: none;
-  color: #cdd6f4;
+  color: #4c4f69;
 }
 
 #entry {
-  background-color: #1e1e2e;
+  background-color: #eff1f5;
 }
 
 #entry arrow {
   border: none;
-  color: #b4befe;
+  color: #7287fd;
 }
 
 /* Selected Entry */
 #entry:selected {
-  border: 0.11em solid #b4befe;
+  border: 0.11em solid #7287fd;
 }
 
 #entry:selected #text {
-  color: #cba6f7;
+  color: #8839ef;
 }
 
 #entry:drop(active) {
-  background-color: #b4befe !important;
+  background-color: #7287fd !important;
 }
