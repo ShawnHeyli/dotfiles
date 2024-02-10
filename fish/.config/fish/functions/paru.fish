@@ -1,4 +1,4 @@
-function paru --description 'alias paru=paru --skipreview'
- command paru --skipreview $argv
+function paru --description 'alias paru=paru --skipreview --bottomup'
+ command paru --skipreview --bottomup $argv
         
 end
