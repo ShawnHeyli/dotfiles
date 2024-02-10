@@ -1,5 +1,4 @@
 precision mediump float;
-o?
 
 varying vec2 v_texcoord;
 uniform sampler2D tex;
@@ -19,7 +18,7 @@ const float scanlineThreshold     = 0.3;
 
 // =================================================================== Noise
 const bool doAdditiveNoise        = !killswitch && true;
-const vec3 additiveNoiseIntensity = vec3(0.05, 0.05, 0.1) * 1.5;
+const vec3 additiveNoiseIntensity = vec3(0.05, 0.05, 0.1) * 1.2;
 const bool doChromaNoise          = !killswitch && false;
 const float chromaNoiseIntensity  = 1.0;
 
@@ -30,7 +29,7 @@ const float shimmerIntensity      = 0.2;
 
 // =================================================================== Vibrance
 const bool doVibrance             = !killswitch && true;
-const float vibrance              = 0.3;
+const float vibrance              = 0.2;
 const vec3 vibranceColorBalance   = vec3(2.0, 1.0, 2.0);
 const vec3 vibranceCoefs          = vibranceColorBalance * -vibrance;
 
