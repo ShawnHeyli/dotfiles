@@ -1,6 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR --export EDITOR:helix
+SETUVAR --export EDITOR:nvim
 SETUVAR --export --path RIPGREP_CONFIG_PATH:/home/defaultmodel/\x2econfig/ripgreprc
 SETUVAR --export STOW_DIR:/home/defaultmodel/\x2edotfiles/
 SETUVAR __fish_initialized:3400
