@@ -15,7 +15,7 @@ M.disabled = {
     ["<leader>ca"] = "",
     ["<leader>ra"] = "",
     ["<leader>lf"] = "",
-    ["A-i"] = "",
+    ["<A-i>"] = "",
     ["<leader>fh"] = "",
     ["<leader>pt"] = "",
     ["<leader>cm"] = "",
@@ -25,7 +25,7 @@ M.disabled = {
 
   v = {
     ["<leader>ca"] = "",
-    ["A-i"] = ""
+    ["<A-i>"] = ""
   }
 }
 
@@ -55,7 +55,7 @@ M.copilot = {
 
 M.nvterm = {
   n = {
-    ["A-f"] = {
+    ["<A-f>"] = {
       function()
         require("nvterm.terminal").toggle "float"
       end,
@@ -64,7 +64,7 @@ M.nvterm = {
   },
 
   v = {
-    ["A-f"] = {
+    ["<A-f>"] = {
       function()
         require("nvterm.terminal").toggle "float"
       end,
