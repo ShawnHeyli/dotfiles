@@ -28,6 +28,12 @@ local plugins = {
     version = '^4', -- Recommended
     ft = { 'rust' },
   },
+  {
+    "stevearc/conform.nvim",
+    lazy = false,
+    config = function()
+      require "custom.configs.conform"
+    end,
   }
 }
 return plugins
