@@ -1,8 +1,8 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR --export EDITOR:nvim
-SETUVAR --export --path RIPGREP_CONFIG_PATH:{$HOME}\x2econfig/ripgreprc
-SETUVAR --export STOW_DIR:{$HOME}\x2edotfiles/
+SETUVAR --export --path RIPGREP_CONFIG_PATH:/home/defaultmodel/\x2econfig/ripgreprc
+SETUVAR --export STOW_DIR:/home/defaultmodel/\x2edotfiles/
 SETUVAR __fish_initialized:3400
 SETUVAR fish_color_autosuggestion:737994
 SETUVAR fish_color_cancel:e78284
@@ -43,4 +43,4 @@ SETUVAR fish_pager_color_selected_background:\x1d
 SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
-SETUVAR fish_user_paths:/home/defaultmodel/programming/s6/sea/riscv\x2dgnu\x2dtoolchain/bin
+SETUVAR fish_user_paths:/home/defaultmodel/\x2ecargo/bin\x1e/home/defaultmodel/programming/s6/sea/riscv\x2dgnu\x2dtoolchain/bin
