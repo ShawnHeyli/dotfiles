@@ -84,6 +84,7 @@ M.telescope = {
     ["<leader>gt"] = { "<cmd> Telescope git_status <CR>", "Git status" },
     ["<leader>th"] = { "<cmd> Telescope themes <CR>", "Nvchad themes" },
     ["<leader>fb"] = { "<cmd> Telescope marks <CR>", "telescope bookmarks" },
+    ["<leader>fp"] = { "<cmd> Telescope project <CR>", "telescope project switcher" }
   }
 }
 

@@ -14,6 +14,18 @@ local plugins = {
     end
   },
   {
+    "nvim-telescope/telescope.nvim",
+    config = function()
+      require "custom.configs.telescope"
+    end
+  },
+  {
+    "nvim-telescope/telescope-media-files.nvim"
+  },
+  {
+    "nvim-telescope/telescope-project.nvim"
+  },
+  {
     "zbirenbaum/copilot.lua",
     -- Lazy load when event occurs. Events are triggered
     -- as mentioned in: https://vi.stackexchange.com/a/4495/20389
