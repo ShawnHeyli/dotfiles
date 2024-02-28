@@ -15,3 +15,13 @@ select = "underline"
 [editor.soft-wrap]
 enable = true
 max-wrap = 10
+
+[editor.lsp]
+enable=true
+auto-signature-help=true
+display-messages = true
+
+[editor.indent-guides]
+render = true
+character = "┊"
+skip-levels = 1
