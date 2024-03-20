@@ -22,6 +22,9 @@ error_symbol = '[](bold red) '
 [cmake]
 format = "via [$symbol]($style)"
 
+[container]
+format = "️🌶️ "
+
 [java]
 format = 'via [$symbol]($style)'
 symbol = "࿗"
