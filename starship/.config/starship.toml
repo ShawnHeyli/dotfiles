@@ -23,7 +23,10 @@ error_symbol = '[](bold red) '
 format = "via [$symbol]($style)"
 
 [container]
-format = "️🌶️ "
+format = '🌶️'
+
+[hostname]
+format = ''
 
 [java]
 format = 'via [$symbol]($style)'
@@ -35,6 +38,9 @@ format = 'via [$symbol]($style)'
 
 [nodejs]
 format = 'via [$symbol]($style)'
+
+[username]
+format = ''
 
 [scala]
 format = ''
